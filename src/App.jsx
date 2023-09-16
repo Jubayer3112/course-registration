@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import Cart from "./Components/Cart/Cart";
 import Courses from "./Components/Courses/Courses";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [selectedItem, setSelctedItem] = useState([]);
@@ -11,9 +13,11 @@ function App() {
   const selectHandle = (item) => {
     const isExist = selectedItem.find((cartItem) => cartItem.id === item.id);
     if (isExist) {
-      return alert("data agei ache");
+      return toast("This course is alredy added");
     } else if (remainCredit - item.credit < 0) {
-      return alert("credit nai");
+      return toast(
+        "You havent enough credit to purchase this course. Your credit limit has been exceeded"
+      );
     }
     setSelctedItem([...selectedItem, item]);
     setCredit(credit + item.credit);
@@ -35,6 +39,7 @@ function App() {
               remainCredit={remainCredit}
               total={total}
             ></Cart>
+            <ToastContainer />
           </div>
         </div>
       </main>
