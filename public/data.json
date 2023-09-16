@@ -10,7 +10,7 @@
   {
     "id": 2,
     "course_img": "https://i.ibb.co/Kwh4hVj/Rectangle-2-2.png",
-    "course_title": "Intro to C Programming",
+    "course_title": "Introduction to C Programming",
     "course_description": "Start your coding journey with C, a foundational language. Gain practical coding experience and build a strong foundation.",
     "course_price": 25000,
     "credit": 3
