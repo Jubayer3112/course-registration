@@ -1,8 +1,12 @@
-# React + Vite
+# Projects feature for react
+-Authentication and User Management
+-Real-time Chat or Messaging
+-Data Visualization and Dashboards
+-Search and Filtering
+-Notifications and Alerts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# how I managed the state in my assignment project
+I managed state for my assignment for 
+-set data from array: when we get data from json and store into state
+-set data as a number: When working with credit plus and minus i use state.  
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

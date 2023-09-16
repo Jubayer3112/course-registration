@@ -26,12 +26,12 @@ function App() {
   };
   return (
     <>
-      <main className="bg-[#f3f3f3]">
+      <main className="bg-[#f3f3f3] px-3">
         <div className="container mx-auto">
           <h1 className="text-center text-[#1C1B1B] font-bold text-4xl py-14">
             Course Registration
           </h1>
-          <div className="flex items-start gap-9">
+          <div className="flex flex-col-reverse lg:flex-row items-start gap-9">
             <Courses selectHandle={selectHandle}></Courses>
             <Cart
               selectedItem={selectedItem}

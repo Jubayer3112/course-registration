@@ -2,7 +2,7 @@
 const Cart = ({ selectedItem, credit, remainCredit, total }) => {
   console.log(selectedItem);
   return (
-    <div className="card w-[1180px] card-compact bg-white p-4">
+    <div className="card lg:w-[1180px] w-full card-compact bg-white p-4 sticky top-0">
       <div className="card-body">
         <h1 className="text-[#2F80ED] text-2xl font-bold">
           Credit Hour Remaining {remainCredit} hr
