@@ -9,12 +9,16 @@ function App() {
   const [remainCredit, setRemainCredit] = useState(20);
   const [total, setTotal] = useState(0);
   const selectHandle = (item) => {
-    setCredit(credit + item.credit);
-
-    setRemainCredit(remainCredit - item.credit);
-
-    setTotal(total + item.course_price);
+    const isExist = selectedItem.find((cartItem) => cartItem.id === item.id);
+    if (isExist) {
+      return alert("data agei ache");
+    } else if (remainCredit - item.credit < 0) {
+      return alert("credit nai");
+    }
     setSelctedItem([...selectedItem, item]);
+    setCredit(credit + item.credit);
+    setRemainCredit(remainCredit - item.credit);
+    setTotal(total + item.course_price);
   };
   return (
     <>
