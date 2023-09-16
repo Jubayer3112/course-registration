@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import doller from "../../assets/dollar-sign 1.png";
 import dcredit from "../../assets/Frame.png";
-const Course = ({ course }) => {
+const Course = ({ course, selectHandle }) => {
   console.log(course);
   const { course_title, course_price, credit, course_description, course_img } =
     course;
@@ -27,7 +27,12 @@ const Course = ({ course }) => {
             <span className="flex-1 ">Credit: {credit}</span>
           </div>
         </div>
-        <button className="bg-[#2F80ED] text-white py-3 text-xl font-semibold rounded-lg">Select</button>
+        <button
+          onClick={() => selectHandle(course)}
+          className="bg-[#2F80ED] text-white py-3 text-xl font-semibold rounded-lg"
+        >
+          Select
+        </button>
       </div>
     </div>
   );

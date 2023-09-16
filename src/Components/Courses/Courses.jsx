@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { useEffect } from "react";
 import Course from "../Course/Course";
 
-const Courses = () => {
+const Courses = ({selectHandle}) => {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
     fetch("data.json")
@@ -12,7 +13,11 @@ const Courses = () => {
   return (
     <div className="grid grid-cols-3 gap-6">
       {courses.map((course) => (
-        <Course key={courses.id} course={course}></Course>
+        <Course
+          key={courses.id}
+          course={course}
+          selectHandle={selectHandle}
+        ></Course>
       ))}
     </div>
   );

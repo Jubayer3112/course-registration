@@ -18,7 +18,7 @@
   {
     "id": 3,
     "course_img": "https://i.ibb.co/NjTSQLp/Rectangle-2-3.png",
-    "course_title": "Intro to Algorithms",
+    "course_title": "Introduction to Algorithms",
     "course_description": "Explore algorithms' role in technology. Learn design, analysis, and problem-solving, enhancing your skills.",
     "course_price": 10000,
     "credit": 2
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "course_img": "https://i.ibb.co/SV8d2JM/Rectangle-2-4.png",
-    "course_title": "Intro to C++ for DSA",
+    "course_title": "Introduction to C++ for DSA",
     "course_description": "Dive into C++ for Data Structures and Algorithms. Master programming and problem-solving.",
     "course_price": 5000,
     "credit": 4
@@ -66,7 +66,7 @@
   {
     "id": 9,
     "course_img": "https://i.ibb.co/C2YKDHw/Rectangle-2.png",
-    "course_title": "Intro to OOP Python",
+    "course_title": "Introduction to OOP Python",
     "course_description": "Explore OOP in Python for practical software development. Learn design using classes and inheritance.",
     "course_price": 20000,
     "credit": 2

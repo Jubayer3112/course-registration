@@ -1,15 +1,28 @@
-const Cart = () => {
+/* eslint-disable react/prop-types */
+const Cart = ({ selectedItem, credit, remainCredit, total }) => {
+  console.log(selectedItem);
   return (
-    <div className="card w-[1020px] card-compact bg-white">
+    <div className="card w-[1180px] card-compact bg-white p-4">
       <div className="card-body">
-        <h1 className="text-[#2F80ED] text-2xl font-bold">Credit Hour Remaining 7 hr</h1>
+        <h1 className="text-[#2F80ED] text-2xl font-bold">
+          Credit Hour Remaining {remainCredit} hr
+        </h1>
         <hr />
         <h1 className=" text-2xl font-bold">Course Name</h1>
-        <p className="text-[#737272] text-lg">1 Introduction to c programming</p>
+        {selectedItem.map((selected, index) => (
+          <p key={selected.id} className="text-[#737272] text-lg">
+            {index + 1} {selected.course_title}
+          </p>
+        ))}
+
         <hr />
-        <h1 className="text-[#474747] text-xl font-semibold">Total Credit Hour : 13</h1>
+        <h1 className="text-[#474747] text-xl font-semibold">
+          Total Credit Hour : {credit}
+        </h1>
         <hr />
-        <h1 className="text-[#474747] text-xl font-bold">Total Price : 48000 USD</h1>
+        <h1 className="text-[#474747] text-xl font-bold">
+          Total Price : {total} USD
+        </h1>
       </div>
     </div>
   );
